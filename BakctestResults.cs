@@ -5,6 +5,13 @@ namespace LeanExperimentResultsParser
     public class BakctestResults
     {
         public BacktestStatistics BacktestStatistics { get; set; }
+        public CustomStatistics CustomStatistics { get; set; }
+    }
+
+    public class CustomStatistics
+    {
+        [JsonProperty("ID")]
+        public int ID { get; set; }
     }
 
     public class BacktestStatistics
